@@ -36,6 +36,7 @@ path="`echo $url | grep / | cut -d/ -f2-`"
 # parsing ended
 # ============================================================================
 
+echo "Exporting env..."
 export FUSIONAUTH_APP_HTTP_PORT=$PORT
 export FUSIONAUTH_APP_URL="http://0.0.0.0:"$PORT
 export DATABASE_URL="jdbc:postgresql://$host:$port/$path"
@@ -47,4 +48,10 @@ export DATABASE_PASSWORD="$pass"
 #echo "Database Password: $DATABASE_PASSWORD"
 
 # start fusionauth-app
-/usr/local/fusionauth/bin/startup.sh
+echo "Starting up..."
+/usr/local/fusionauth/fusionauth-app/bin/start.sh
+echo "Startup finished"
+echo "==="
+echo -e "$(ps -e)"
+echo "==="
+exit 3
