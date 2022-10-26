@@ -43,15 +43,10 @@ export DATABASE_URL="jdbc:postgresql://$host:$port/$path"
 export DATABASE_USERNAME="$user"
 export DATABASE_PASSWORD="$pass"
 
-#echo "Database URL: $DATABASE_URL"
-#echo "Database Username: $DATABASE_USERNAME"
-#echo "Database Password: $DATABASE_PASSWORD"
+echo "Database URL: $DATABASE_URL"
+echo "Database Username: $DATABASE_USERNAME"
+echo "Database Password: $DATABASE_PASSWORD"
 
 # start fusionauth-app
-echo "Starting up..."
+echo "Starting fusionauth"
 /usr/local/fusionauth/fusionauth-app/bin/start.sh
-echo "Startup finished"
-echo "==="
-echo -e "$(ps -e)"
-echo "==="
-exit 3

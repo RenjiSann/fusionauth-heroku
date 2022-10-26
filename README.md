@@ -6,8 +6,10 @@ We got this. Go build something awesome!
 
 Deploy Fusion Auth Server in under 30 seconds :clock1:
 
-Read more at [fusionauth.io](https://fusionauth.io) and the [docs](https://fusionauth.io/docs). 
+Read more at [fusionauth.io](https://fusionauth.io) and the [docs](https://fusionauth.io/docs).
 
+The fork fixes unmaintained version, the script was not working anymore with
+`fusionauth/fusionauth-app:latest`. Now using `fusionauth/fusionauth-app:1.40.2`.
 
 ## Quickstart
 
