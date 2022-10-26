@@ -47,4 +47,4 @@ export DATABASE_PASSWORD="$pass"
 #echo "Database Password: $DATABASE_PASSWORD"
 
 # start fusionauth-app
-/usr/local/fusionauth/fusionauth-app/apache-tomcat/bin/catalina.sh run
+/usr/local/fusionauth/fusionauth-app/bin/startup.sh

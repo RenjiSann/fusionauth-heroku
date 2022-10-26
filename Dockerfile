@@ -1,4 +1,4 @@
-FROM fusionauth/fusionauth-app:latest
+FROM fusionauth/fusionauth-app:1.40.2
 
 COPY ./start.sh /usr/local
 
